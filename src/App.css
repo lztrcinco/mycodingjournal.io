@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+.container{
+  background-color: red;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
+  gap: 100px;
+}
+.main{
+  width: 60%;
+  background-color: rgb(190, 143, 217);
+  padding: 10px;
+  margin: 0 auto;
+  border: 1px solid blue;
+}
+form{
+  display: flex;
+  flex-direction: column;
+ 
+}
+form button{
+  margin-top: 10px;
+  align-self: end;
+}
+.header{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.labelForm2{
+  width: 80%;
+}
+.date2{
+  display: flex;
   align-items: center;
+}
+.date2 input{
+  width: 100%;
+}
+#thoughts{
+  width: 100%;
+  padding: 10px;
+}
+
+article{
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  min-height: 20vh;
+}
+.titleArticle{
+  align-self:center;
+
+
+}
+section {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightskyblue;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  gap: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 75%;
+}
+
+.date {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.text {
+  width: 100%;
+  overflow-wrap: break-word;
+}
+.btn{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 25%;
+}
+.edit,
+.delete {
+  margin-left: 5px;
+}
+button{
+  padding: 5px 10px;
+  border-radius: 8%!important;
+  border: 1px solid blue;
+}
+.delete{
+  background-color: red;
   color: white;
 }
+.save{
+  background-color: rgb(94, 232, 94);
 
-.App-link {
-  color: #61dafb;
 }
+@media(max-width:426px){
+  .main{
+    width: 90%;
+  }
+  .App{
+    flex-direction: column;
+    gap: 100px;
+  }
+  .content{
+    width: 52%;
+  }
+  .btn{
+    width: 48%;
+    padding: 0!important;
+  }
+  button{
+    padding: 2px 5px;
+  }
+}
+@media (max-width:800px) and (min-width:427px) {
+  .main{
+    width: 90%;
+  }
+  .App{
+    flex-direction: column;
+    gap: 100px;
+  }
+  .content{
+    width: 50%;
+  }
+  .btn{
+    width: 50%;
+  }
+}
+@media (min-width:801px) and (max-width:1150px) {
+  .main{
+    width: 60%;
+  }
+  .content{
+    width: 60%;
+  }
+  .btn{
+    width: 40%;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
